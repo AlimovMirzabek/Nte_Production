@@ -1,0 +1,61 @@
+a {
+  text-decoration: none !important;
+}
+
+.dark-limp-bg {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.light-limp-bg {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  background-size: cover !important;
+  height: 100vh;
+  filter: contrast(1.2);
+
+  @include screen("lg") {
+    height: 75vh;
+  }
+
+  @include screen("sm") {
+    height: 50vh !important;
+  }
+
+  @media screen and (max-height: 450px) {
+    height: 100vh !important;
+  }
+
+  .headline {
+    @include font-size(6em, 25);
+    font-family: 'Montserrat_700', sans-serif;
+  }
+
+  .subtitle {
+    @include font-size(2.6em, 20);
+    color: #ffffff;
+  }
+}
+
+.wz-90 {
+  width: 90%;
+}
+
+.mxW-1400 {
+  max-width: 1400px;
+}
+
+.subtitle {
+  font-family: "Montserrat_500", sans-serif;
+  color: #697078;
+}
+
+section.map {
+  iframe {
+    border-radius: 30px;
+  }
+}

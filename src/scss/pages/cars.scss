@@ -1,0 +1,26 @@
+main#cars {
+	header {
+		background: url("../img/Of-road/cars-header-bg.jpg") no-repeat center;
+        filter: none;
+
+		.headline {
+			@include font-size(5em, 25);
+		}
+
+	}
+	section {
+
+		.autoName {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+
+main#error404 {
+	background: #E5E5E5;
+	color: #697078 !important;
+	header {
+		max-width: 660px !important;
+	}
+}

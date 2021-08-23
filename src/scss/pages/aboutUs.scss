@@ -1,0 +1,45 @@
+main#about-us, main#contacts {
+  header {
+    background: url("../img/About-us/aboutUs-header-bg.jpg") no-repeat center;
+
+    .h1Media {
+      @include font-size(6em, 28)
+    }
+    .h2Media {
+      @include font-size(2.25em, 20)
+    }
+  }
+
+  section {
+    @extend .subtitle;
+    margin-top: 3.6em;
+
+
+  section.description {
+    @media screen and (min-width: 998px) {
+      width: 900px;
+    }
+  }
+  .targets {
+    list-style: none;
+
+      &  *::before {
+        content: "\25CF";
+        margin-right: 5px;
+      }
+  }
+
+  .content {
+      @include font-size(1em, 10)
+  }
+    .avatar {
+      p {
+       margin: 0;
+      }
+    }
+    .ellipse {
+      margin-bottom: 10px;
+    }
+
+  }
+}
