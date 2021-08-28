@@ -9,11 +9,18 @@ footer {
     @include screen('sm') {
       .footer-links {
         height: 20px;
-        contain: content;
-
+        a,p, .tours{
+          display: none;
+        }
         &:hover {
           height: max-content;
+          a,p, .tours{
+            display: block;
+          }
+
+
         }
+
       }
     }
   }
