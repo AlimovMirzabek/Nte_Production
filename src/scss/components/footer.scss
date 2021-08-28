@@ -14,10 +14,9 @@ footer {
         }
         &:hover {
          height: max-content;
-          a,p, .tours{
+          a,p, .tours {
           display: flex;
-            display: -webkit-flex;
-          }
+           }
         }
        }
       }
