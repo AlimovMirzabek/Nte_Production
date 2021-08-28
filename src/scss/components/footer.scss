@@ -13,13 +13,14 @@ footer {
           display: none;
         }
         &:hover {
-         height: auto;
+         height: max-content;
           a,p, .tours{
           display: flex;
+            display: -webkit-flex;
           }
         }
+       }
       }
-    }
   }
 
   .heading {
