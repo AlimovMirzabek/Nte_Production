@@ -1,0 +1,38 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* фоновый цвет */
+  background: #e0e0e0;
+  z-index: 10000;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 20%;
+  margin-top: -150px;
+  margin-left: -70px;
+  text-align: center;
+  animation: preloader-rotate 3s infinite linear;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
