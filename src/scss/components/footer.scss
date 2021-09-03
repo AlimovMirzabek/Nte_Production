@@ -9,17 +9,20 @@ footer {
     @include screen('sm') {
       .footer-links {
         height: 20px;
-        a,p,.tours {
+
+        a, p, .tours {
           display: none;
         }
+
         &:hover {
-         height: max-content;
-          a,p, .tours {
-          display: flex;
-           }
+          height: max-content;
+
+          a, p, .tours {
+            display: flex;
+          }
         }
-       }
       }
+    }
   }
 
   .heading {
@@ -38,7 +41,7 @@ footer {
 
   .logoAndPartners {
     @media screen and (min-width: 992px) {
-     width: max-content; 
+      width: max-content;
     }
 
     .partners {
